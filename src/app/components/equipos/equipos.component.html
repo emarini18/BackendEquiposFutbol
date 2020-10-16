@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<div class="menu-bg col s-12 animated fadeIn fast">
+
+    <div class="perfil col xl2 center-block">
+
+        <div class="row-perfil row text-center">
+            <div class="col s12 m6 l4 xl3 "  *ngFor="let equipo of equipos; let i=index">
+                <div class="card">
+                    <div class="card-image">
+                        <img [src]="equipo.imgEquipo">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">{{ equipo.desEquipo }}</span>
+                    </div>
+                    <div class="card-action">
+                        <span class="tituloDes">Entrenador: </span>
+                        <span>{{ equipo.entrenador.nombreEntrenador }}</span>
+                        <span> {{ equipo.entrenador.apellidoEntrenador }}</span>
+                    </div>
+                    <div class="card-action">
+                        <span class="tituloDes">Estadio: </span>
+                        <span>{{ equipo.estadio.nombreEstadios }}</span>
+                    </div>
+                    <div class="card-action">
+                        <span class="tituloDes">Liga: </span>
+                        <span>{{ equipo.liga.nombreLiga }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+

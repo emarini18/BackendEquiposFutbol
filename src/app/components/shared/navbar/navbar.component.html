@@ -1,0 +1,40 @@
+<nav class="bg-nav nav-extended animated fadeIn fast">
+    
+    <div class="nav-wrapper">
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="brand-logo">Home</a>
+      <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a [routerLink]="['/equipo']" routerLinkActive="router-link-active">Equipos</a></li>
+        <li><a [routerLink]="['/estadio']" routerLinkActive="router-link-active">Estadios</a></li>
+        <li><a [routerLink]="['/liga']" routerLinkActive="router-link-active">Liga</a></li>
+        <li><a (click)="logOut()">Salir</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  
+  <ul class="sidenav" id="mobile-demo">
+    <li><a [routerLink]="['/equipo']" routerLinkActive="router-link-active">Equipos</a></li>
+    <li><a [routerLink]="['/estadio']" routerLinkActive="router-link-active">Estadios</a></li>
+    <li><a [routerLink]="['/liga']" routerLinkActive="router-link-active">Liga</a></li>
+    <li><a (click)="logOut()">Salir</a></li>
+  </ul>
+  
+  
+  <!-- <ul id="mobile-demo" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+        </div>
+        <a><img class="circle" [src]="perfil.IMG_ALUMNO"></a>
+        <a><span class="white-text name">{{ perfil.NOMB_ALUMNO }}</span></a>
+        <a><span class="white-text email">{{ perfil.CORREO_ALUMNO }}</span></a>
+      </div>
+    </li>
+    <li><a class="white-text" [routerLink]="['/taller']" routerLinkActive="router-link-active">Talleres</a></li>
+    <li><a class="white-text" [routerLink]="['/sede']" routerLinkActive="router-link-active">Sedes</a></li>
+    <li><a class="white-text" (click)="logOut()">Salir</a></li>
+  </ul> -->
+  
+
+  

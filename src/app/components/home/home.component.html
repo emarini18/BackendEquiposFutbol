@@ -1,0 +1,39 @@
+<app-navbar [perfil]="perfil" ></app-navbar>
+<div class="menu-bg col s-12 animated fadeIn fast">
+
+    <div class="perfil row col s12 ">
+
+        <div class="img-perfil col s12 m12 l6 xl6">
+            <img class="responsive-img " [src]="perfil.imgUsuario">
+        </div>
+
+
+        <div class="content-perfil col s12 m12 l6 xl6">
+
+            <h4>INFORMACIÓN PERSONAL</h4>
+
+            <div class="des-perfil">
+                <span>Nombre:</span>
+                <span>{{ perfil.nombre }}</span>
+            </div>
+
+            <div class="des-perfil">
+                <span>Apellido:</span>
+                <span>{{ perfil.apellido }}</span>
+            </div>
+
+            <div class="des-perfil">
+                <span>Usuario:</span>
+                <span>{{ perfil.user }}</span>
+            </div>
+
+            <div class="des-perfil">
+                <span>Email:</span>
+                <span>{{ perfil.correo }}</span>
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
